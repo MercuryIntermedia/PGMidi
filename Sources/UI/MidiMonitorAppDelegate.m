@@ -7,11 +7,8 @@
 //
 
 #import "MidiMonitorAppDelegate.h"
-
 #import "MidiMonitorViewController.h"
 #import "PGMidi.h"
-#import "iOSVersionDetection.h"
-#import "PGArc.h"
 
 @implementation MidiMonitorAppDelegate
 
@@ -23,26 +20,14 @@
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
 
-    IF_IOS_HAS_COREMIDI
-    (
-        // We only create a MidiInput object on iOS versions that support CoreMIDI
-        midi                            = [[PGMidi alloc] init];
-        midi.networkEnabled             = YES;
-        viewController.midi             = midi;
-        midi.virtualDestinationEnabled  = YES;
-        midi.virtualSourceEnabled       = YES;
-    )
+    // We only create a MidiInput object on iOS versions that support CoreMIDI
+    _midi                            = [[PGMidi alloc] init];
+    _midi.networkEnabled             = YES;
+    viewController.midi              = _midi;
+    _midi.virtualDestinationEnabled  = YES;
+    _midi.virtualSourceEnabled       = YES;
 
 	return YES;
-}
-
-- (void)dealloc
-{
-#if ! PGMIDI_ARC
-    [viewController release];
-    [window release];
-    [super dealloc];
-#endif
 }
 
 @end

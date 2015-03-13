@@ -13,13 +13,11 @@
 
 @interface MidiMonitorAppDelegate : NSObject <UIApplicationDelegate>
 {
-    UIWindow                  *window;
-    MidiMonitorViewController *viewController;
-    PGMidi                    *midi;
+    PGMidi *_midi;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow                  *window;
-@property (nonatomic, retain) IBOutlet MidiMonitorViewController *viewController;
+@property (nonatomic, strong) IBOutlet UIWindow                  *window;
+@property (nonatomic, strong) IBOutlet MidiMonitorViewController *viewController;
 
 @end
 

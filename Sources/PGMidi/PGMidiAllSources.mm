@@ -6,7 +6,6 @@
 #import "PGMidiAllSources.h"
 
 #import "PGMidi.h"
-#import "PGArc.h"
 
 @interface PGMidiAllSources () <PGMidiDelegate, PGMidiSourceDelegate>
 @end
@@ -16,22 +15,17 @@
 - (void) dealloc
 {
     self.midi = nil;
-#if ! PGMIDI_ARC
-    [super dealloc];
-#endif
 }
-
-@synthesize midi, delegate;
 
 - (void) setMidi:(PGMidi *)newMidi
 {
-    midi.delegate = nil;
-    for (PGMidiSource *source in midi.sources) [source removeDelegate:self];
+    _midi.delegate = nil;
+    for (PGMidiSource *source in _midi.sources) [source removeDelegate:self];
 
-    midi = newMidi;
+    _midi = newMidi;
 
-    midi.delegate = self;
-    for (PGMidiSource *source in midi.sources) [source addDelegate:self];
+    _midi.delegate = self;
+    for (PGMidiSource *source in _midi.sources) [source addDelegate:self];
 }
 
 #pragma mark PGMidiDelegate
@@ -49,7 +43,7 @@
 
 - (void) midiSource:(PGMidiSource*)input midiReceived:(const MIDIPacketList *)packetList
 {
-    [delegate midiSource:input midiReceived:packetList];
+    [_delegate midiSource:input midiReceived:packetList];
 }
 
 @end
