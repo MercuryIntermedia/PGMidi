@@ -85,7 +85,7 @@ BOOL IsNetworkSession(MIDIEndpointRef ref)
 //==============================================================================
 
 @interface PGMidiSource ()
-@property (strong, nonatomic, readwrite) NSArray *delegates;
+@property (strong, nonatomic, readwrite) NSHashTable *delegates;
 @end
 
 @implementation PGMidiSource
@@ -94,31 +94,28 @@ BOOL IsNetworkSession(MIDIEndpointRef ref)
 {
     self = [super initWithMidi:m endpoint:e];
     if (self) {
-        self.delegates = [NSArray array];
+        self.delegates = [NSHashTable hashTableWithOptions:NSPointerFunctionsWeakMemory];
     }
     return self;
 }
 
 - (void)addDelegate:(id<PGMidiSourceDelegate>)delegate
 {
-    if (![_delegates containsObject:[NSValue valueWithPointer:(void*)delegate]]) {
-        self.delegates = [_delegates arrayByAddingObject:[NSValue valueWithPointer:(void*)delegate] /* avoid retain loop */];
+    if (![_delegates containsObject:delegate]) {
+        [_delegates addObject:delegate];
     }
 }
 
 - (void)removeDelegate:(id<PGMidiSourceDelegate>)delegate
 {
-    NSMutableArray *mutableDelegates = [_delegates mutableCopy];
-    [mutableDelegates removeObject:[NSValue valueWithPointer:(void*)delegate]];
-    self.delegates = mutableDelegates;
+    [_delegates removeObject:delegate];
 }
 
 // NOTE: Called on a separate high-priority thread, not the main runloop
 - (void)midiRead:(const MIDIPacketList *)pktlist
 {
-    NSArray *delegates = self.delegates;
-    for (NSValue *delegatePtr in delegates) {
-        id<PGMidiSourceDelegate> delegate = (id<PGMidiSourceDelegate>)[delegatePtr pointerValue];
+    NSHashTable *delegates = self.delegates;
+    for (id<PGMidiSourceDelegate> delegate in delegates) {
         [delegate midiSource:self midiReceived:pktlist];
     }
 }

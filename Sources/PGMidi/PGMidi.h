@@ -75,7 +75,7 @@ extern NSString * const PGMidiConnectionKey;
 - (void)addDelegate:(id<PGMidiSourceDelegate>)delegate;
 - (void)removeDelegate:(id<PGMidiSourceDelegate>)delegate;
 
-@property (strong, nonatomic, readonly) NSArray *delegates;
+@property (strong, nonatomic, readonly) NSHashTable *delegates;
 
 @end
 
