@@ -80,6 +80,12 @@ BOOL IsNetworkSession(MIDIEndpointRef ref)
     return self;
 }
 
+- (NSString *)description
+{
+    NSString *isNetwork = _isNetworkSession ? @"yes" : @"no";
+    return [NSString stringWithFormat:@"< PGMidiConnection: name=%@ isNetwork=%@ >", _name, isNetwork];
+}
+
 @end
 
 //==============================================================================

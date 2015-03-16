@@ -36,25 +36,18 @@ UInt8 RandomNoteNumber() { return UInt8(rand() / (RAND_MAX / 127)); }
     _textView.text = nil;
 }
 
-const char *ToString(BOOL b) { return b ? "yes":"no"; }
-
-NSString *ToString(PGMidiConnection *connection)
-{
-    return [NSString stringWithFormat:@"< PGMidiConnection: name=%@ isNetwork=%s >",
-            connection.name, ToString(connection.isNetworkSession)];
-}
 - (IBAction)listAllInterfaces
 {
 	[self addString:@"\n\nInterface list:"];
 	for (PGMidiSource *source in _midi.sources)
 	{
-		NSString *description = [NSString stringWithFormat:@"Source: %@", ToString(source)];
+		NSString *description = [NSString stringWithFormat:@"Source: %@", source];
 		[self addString:description];
 	}
 	[self addString:@""];
 	for (PGMidiDestination *destination in _midi.destinations)
 	{
-		NSString *description = [NSString stringWithFormat:@"Destination: %@", ToString(destination)];
+		NSString *description = [NSString stringWithFormat:@"Destination: %@", destination];
 		[self addString:description];
 	}
 }
@@ -104,25 +97,25 @@ NSString *ToString(PGMidiConnection *connection)
 {
     [source addDelegate:self];
     [self updateCountLabel];
-    [self addString:[NSString stringWithFormat:@"Source added: %@", ToString(source)]];
+    [self addString:[NSString stringWithFormat:@"Source added: %@", source]];
 }
 
 - (void)midi:(PGMidi*)midi sourceRemoved:(PGMidiSource *)source
 {
     [self updateCountLabel];
-    [self addString:[NSString stringWithFormat:@"Source removed: %@", ToString(source)]];
+    [self addString:[NSString stringWithFormat:@"Source removed: %@", source]];
 }
 
 - (void)midi:(PGMidi*)midi destinationAdded:(PGMidiDestination *)destination
 {
     [self updateCountLabel];
-    [self addString:[NSString stringWithFormat:@"Desintation added: %@", ToString(destination)]];
+    [self addString:[NSString stringWithFormat:@"Desintation added: %@", destination]];
 }
 
 - (void)midi:(PGMidi*)midi destinationRemoved:(PGMidiDestination *)destination
 {
     [self updateCountLabel];
-    [self addString:[NSString stringWithFormat:@"Desintation removed: %@", ToString(destination)]];
+    [self addString:[NSString stringWithFormat:@"Desintation removed: %@", destination]];
 }
 
 NSString *StringFromPacket(const MIDIPacket *packet)
