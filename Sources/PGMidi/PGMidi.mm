@@ -68,10 +68,10 @@ BOOL IsNetworkSession(MIDIEndpointRef ref)
 
 @implementation PGMidiConnection
 
-- (id) initWithMidi:(PGMidi*)m endpoint:(MIDIEndpointRef)e
+- (id)initWithMidi:(PGMidi*)m endpoint:(MIDIEndpointRef)e
 {
-    if ((self = [super init]))
-    {
+    self = [super init];
+    if (self) {
         _midi = m;
         _endpoint = e;
         _name = NameOfEndpoint(e);

@@ -120,7 +120,7 @@ extern NSString * const PGMidiConnectionKey;
 
 + (BOOL)midiAvailable;
 
-@property (nonatomic, assign)   id<PGMidiDelegate> delegate;
+@property (nonatomic, weak)   id<PGMidiDelegate> delegate;
 @property (nonatomic, readonly) NSUInteger numberOfConnections;
 @property (nonatomic, readonly) NSMutableArray *sources;
 @property (nonatomic, readonly) NSMutableArray *destinations;
