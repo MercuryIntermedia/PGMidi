@@ -20,7 +20,6 @@
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
 
-    // We only create a MidiInput object on iOS versions that support CoreMIDI
     _midi                            = [[PGMidi alloc] init];
     _midi.networkEnabled             = YES;
     viewController.midi              = _midi;

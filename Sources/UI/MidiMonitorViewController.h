@@ -12,14 +12,14 @@
 
 @interface MidiMonitorViewController : UIViewController
 
-@property (nonatomic, weak) IBOutlet UILabel    *countLabel;
+@property (nonatomic, weak) IBOutlet UILabel *countLabel;
 @property (nonatomic, weak) IBOutlet UITextView *textView;
 
 @property (nonatomic,strong) PGMidi *midi;
 
-- (IBAction) clearTextView;
-- (IBAction) listAllInterfaces;
-- (IBAction) sendMidiData;
+- (IBAction)clearTextView;
+- (IBAction)listAllInterfaces;
+- (IBAction)sendMidiData;
 
 @end
 
