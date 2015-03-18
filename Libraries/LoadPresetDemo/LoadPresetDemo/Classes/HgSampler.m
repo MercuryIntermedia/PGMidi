@@ -59,7 +59,7 @@ enum {
 #pragma mark - Audio Setup
 - (OSStatus)loadPresetWithName:(NSString *)name
 {
-    NSURL *presetURL = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:name ofType:@"aupreset"]];
+    NSURL *presetURL = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:name ofType:@"exs"]];
     if (presetURL) {
         NSLog(@"Attempting to load preset '%@'\n", [presetURL description]);
     }
@@ -67,59 +67,23 @@ enum {
         NSLog(@"COULD NOT GET PRESET PATH!");
     }
     
-    return [self loadSynthFromPresetURL:presetURL];
+    return [self loadInstrumentFromURL:presetURL];
 }
 
-// Load a synthesizer preset file and apply it to the Sampler unit
-- (OSStatus)loadSynthFromPresetURL:(NSURL *)presetURL
+- (OSStatus)loadInstrumentFromURL:(NSURL *)url
 {
-    CFDataRef propertyResourceData = 0;
-    Boolean status;
-    SInt32 errorCode = 0;
     OSStatus result = noErr;
     
-    // Read from the URL and convert into a CFData chunk
-    status = CFURLCreateDataAndPropertiesFromResource (
-                                                       kCFAllocatorDefault,
-                                                       (__bridge CFURLRef) presetURL,
-                                                       &propertyResourceData,
-                                                       NULL,
-                                                       NULL,
-                                                       &errorCode
-                                                       );
+    AUSamplerInstrumentData data = {0};
+    data.fileURL = (__bridge CFURLRef)(url);
+    data.instrumentType = kInstrumentType_EXS24;
     
-    NSAssert (status == YES && propertyResourceData != 0, @"Unable to create data and properties from a preset. Error code: %d '%.4s'", (int) errorCode, (const char *)&errorCode);
-   	
-    // Convert the data object into a property list
-    CFPropertyListRef presetPropertyList = 0;
-    CFPropertyListFormat dataFormat = 0;
-    CFErrorRef errorRef = 0;
-    presetPropertyList = CFPropertyListCreateWithData (
-                                                       kCFAllocatorDefault,
-                                                       propertyResourceData,
-                                                       kCFPropertyListImmutable,
-                                                       &dataFormat,
-                                                       &errorRef
-                                                       );
-    
-    // Set the class info property for the Sampler unit using the property list as the value.
-    if (presetPropertyList != 0) {
-        
-        result = AudioUnitSetProperty(
-                                      _samplerUnit,
-                                      kAudioUnitProperty_ClassInfo,
-                                      kAudioUnitScope_Global,
-                                      0,
-                                      &presetPropertyList,
-                                      sizeof(CFPropertyListRef)
-                                      );
-        
-        CFRelease(presetPropertyList);
-    }
-    
-    if (errorRef) CFRelease(errorRef);
-    CFRelease (propertyResourceData);
-    
+    result = AudioUnitSetProperty(_samplerUnit,
+                                  kAUSamplerProperty_LoadInstrument,
+                                  kAudioUnitScope_Global,
+                                  0,
+                                  &data,
+                                  sizeof(data));
     return result;
 }
 

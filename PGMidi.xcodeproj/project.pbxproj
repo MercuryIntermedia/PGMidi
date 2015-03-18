@@ -116,7 +116,7 @@
 		A0C6DD141AB8A1CD009F1EA1 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		A0C6DD161AB8A232009F1EA1 /* HgSampler_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HgSampler_iOS.h; sourceTree = "<group>"; };
 		A0C6DD171AB8A232009F1EA1 /* HgSampler_iOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HgSampler_iOS.m; sourceTree = "<group>"; };
-		A0C6DD231AB8A69A009F1EA1 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = Libraries/LoadPresetDemo/LoadPresetDemo/Sounds; sourceTree = "<group>"; };
+		A0C6DD231AB8A69A009F1EA1 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = ../Libraries/LoadPresetDemo/LoadPresetDemo/Sounds; sourceTree = "<group>"; };
 		C1314ABE12FC259B0073005E /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
 		C1314ABF12FC259B0073005E /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
 		C1314AC012FC259B0073005E /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
@@ -197,7 +197,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				A0C6DD231AB8A69A009F1EA1 /* Sounds */,
 				C139406114DF28FA0054551E /* README.md */,
 				C14323231A641EE600CEB4F5 /* PGMidi.podspec */,
 				C1763E401266EFB60032E953 /* Sources */,
@@ -215,6 +214,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A0C6DD231AB8A69A009F1EA1 /* Sounds */,
 				C1763E761266FAC90032E953 /* Icons */,
 				C1763E751266FAC60032E953 /* XIBs */,
 				C1FFC85A12798CAF003DD5CD /* Entitlements.plist */,
