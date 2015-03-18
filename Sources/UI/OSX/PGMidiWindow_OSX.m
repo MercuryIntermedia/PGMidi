@@ -7,9 +7,9 @@
 //
 
 #import <CoreMIDI/CoreMIDI.h>
-#import "MidiMonitorOSXWindow.h"
+#import "PGMidiWindow_OSX.h"
 
-@implementation MidiMonitorOSXWindow
+@implementation PGMidiWindow_OSX
 
 #pragma mark - Getters/Setters
 - (void)setMidi:(PGMidi *)midi

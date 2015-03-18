@@ -6,20 +6,20 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "MidiMonitorViewController.h"
+#import "PGMidiViewController_iOS.h"
 
 #import "PGMidi.h"
 #import <CoreMIDI/CoreMIDI.h>
 
 UInt8 RandomNoteNumber() { return UInt8(rand() / (RAND_MAX / 127)); }
 
-@interface MidiMonitorViewController () <PGMidiDelegate, PGMidiSourceDelegate>
+@interface PGMidiViewController_iOS () <PGMidiDelegate, PGMidiSourceDelegate>
 - (void) updateCountLabel;
 - (void) addString:(NSString*)string;
 - (void) sendMidiDataInBackground;
 @end
 
-@implementation MidiMonitorViewController
+@implementation PGMidiViewController_iOS
 
 #pragma mark UIViewController
 

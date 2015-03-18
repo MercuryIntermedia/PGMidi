@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@class MidiMonitorViewController;
+@class PGMidiViewController_iOS;
 @class PGMidi;
 
-@interface MidiMonitorAppDelegate : NSObject <UIApplicationDelegate>
+@interface PGMidiAppDelegate_iOS : NSObject <UIApplicationDelegate>
 {
     PGMidi *_midi;
 }
 
 @property (nonatomic, strong) IBOutlet UIWindow                  *window;
-@property (nonatomic, strong) IBOutlet MidiMonitorViewController *viewController;
+@property (nonatomic, strong) IBOutlet PGMidiViewController_iOS *viewController;
 
 @end
 

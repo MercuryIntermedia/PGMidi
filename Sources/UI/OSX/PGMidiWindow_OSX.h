@@ -11,7 +11,7 @@
 
 @class HgSampler;
 
-@interface MidiMonitorOSXWindow : NSWindow <PGMidiDelegate, PGMidiSourceDelegate>
+@interface PGMidiWindow_OSX : NSWindow <PGMidiDelegate, PGMidiSourceDelegate>
 
 @property (nonatomic, weak) IBOutlet NSTextField *countTextField;
 @property (nonatomic, strong) IBOutlet NSTextView *textView;

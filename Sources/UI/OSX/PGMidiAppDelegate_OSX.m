@@ -6,11 +6,11 @@
 //
 //
 
-#import "MidiMonitorOSXAppDelegate.h"
-#import "MidiMonitorOSXWindow.h"
+#import "PGMidiAppDelegate_OSX.h"
+#import "PGMidiWindow_OSX.h"
 #import "PGMidi.h"
 
-@implementation MidiMonitorOSXAppDelegate
+@implementation PGMidiAppDelegate_OSX
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _midi                            = [[PGMidi alloc] init];

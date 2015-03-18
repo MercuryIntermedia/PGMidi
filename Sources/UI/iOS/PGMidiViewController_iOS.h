@@ -10,7 +10,7 @@
 
 @class PGMidi;
 
-@interface MidiMonitorViewController : UIViewController
+@interface PGMidiViewController_iOS : UIViewController
 
 @property (nonatomic, weak) IBOutlet UILabel *countLabel;
 @property (nonatomic, weak) IBOutlet UITextView *textView;

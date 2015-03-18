@@ -6,11 +6,11 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "MidiMonitorAppDelegate.h"
-#import "MidiMonitorViewController.h"
+#import "PGMidiAppDelegate_iOS.h"
+#import "PGMidiViewController_iOS.h"
 #import "PGMidi.h"
 
-@implementation MidiMonitorAppDelegate
+@implementation PGMidiAppDelegate_iOS
 
 @synthesize window;
 @synthesize viewController;
