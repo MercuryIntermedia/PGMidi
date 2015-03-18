@@ -27,6 +27,7 @@
 
 /// Audio Setup
 - (OSStatus)loadPresetWithName:(NSString *)name;
+- (OSStatus)loadEXS24WithName:(NSString *)name;
 
 
 /// Playback

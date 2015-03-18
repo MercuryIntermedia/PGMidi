@@ -22,7 +22,7 @@
 - (void)sharedInit
 {
     self.sampler = [HgSampler sampler];
-    [_sampler loadPresetWithName:@"VintageStrat"];
+    [_sampler loadPresetWithName:@"Trombone"];
 }
 
 #pragma mark - Getters/Setters

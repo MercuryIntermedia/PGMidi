@@ -59,24 +59,31 @@ enum {
 #pragma mark - Audio Setup
 - (OSStatus)loadPresetWithName:(NSString *)name
 {
-    NSURL *presetURL = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:name ofType:@"exs"]];
-    if (presetURL) {
-        NSLog(@"Attempting to load preset '%@'\n", [presetURL description]);
-    }
-    else {
-        NSLog(@"COULD NOT GET PRESET PATH!");
-    }
-    
-    return [self loadInstrumentFromURL:presetURL];
+    return [self loadInstrumentWithName:name instrumentType:kInstrumentType_AUPreset];
 }
 
-- (OSStatus)loadInstrumentFromURL:(NSURL *)url
+- (OSStatus)loadEXS24WithName:(NSString *)name
 {
+    return [self loadInstrumentWithName:name instrumentType:kInstrumentType_EXS24];
+}
+
+- (OSStatus)loadInstrumentWithName:(NSString *)name instrumentType:(UInt8)instrumentType
+{
+    NSAssert((instrumentType == kInstrumentType_AUPreset || instrumentType == kInstrumentType_EXS24), @"Unsupported instrument type");
+    NSString *extension = (instrumentType == kInstrumentType_AUPreset) ? @"aupreset" : @"exs";
+    
+    NSURL *url = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:name ofType:extension]];
+    if (url) {
+        NSLog(@"Attempting to load instrument '%@'\n", [url description]);
+    } else {
+        NSLog(@"COULD NOT GET INSTRUMENT PATH!");
+    }
+    
     OSStatus result = noErr;
     
     AUSamplerInstrumentData data = {0};
     data.fileURL = (__bridge CFURLRef)(url);
-    data.instrumentType = kInstrumentType_EXS24;
+    data.instrumentType = instrumentType;
     
     result = AudioUnitSetProperty(_samplerUnit,
                                   kAUSamplerProperty_LoadInstrument,
@@ -95,7 +102,7 @@ enum {
     
     // Specify the common portion of an audio unit's identify, used for both audio units
     // in the graph.
-    AudioComponentDescription cd = {};
+    AudioComponentDescription cd = {0};
     cd.componentManufacturer     = kAudioUnitManufacturer_Apple;
     cd.componentFlags            = 0;
     cd.componentFlagsMask        = 0;
@@ -250,9 +257,8 @@ enum {
 - (void)playMIDIWithStatus:(UInt32)status data1:(UInt32)data1 data2:(UInt32)data2
 {
     OSStatus result = noErr;
-    require_noerr (result = MusicDeviceMIDIEvent(_samplerUnit, status, data1, data2, 0), logTheError);
+    result = MusicDeviceMIDIEvent(_samplerUnit, status, data1, data2, 0);
     
-logTheError:
     if (result != noErr) {
         NSLog (@"Unable to stop playing the high note. Error code: %d '%.4s'", (int) result, (const char *)&result);
     }
