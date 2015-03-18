@@ -8,8 +8,32 @@
 
 #import <CoreMIDI/CoreMIDI.h>
 #import "MidiMonitorOSXWindow.h"
+#import "HgSampler.h"
 
 @implementation MidiMonitorOSXWindow
+
+
+#pragma mark - Lifecycle
+- (void)awakeFromNib
+{
+    [self sharedInit];
+}
+
+- (void)sharedInit
+{
+    self.sampler = [HgSampler sampler];
+    [_sampler loadPresetWithName:@"VintageStrat"];
+}
+
+#pragma mark - Getters/Setters
+- (void)setMidi:(PGMidi *)midi
+{
+    _midi = midi;
+    _midi.delegate = self;
+    for (PGMidiSource *source in _midi.sources) {
+        [source addDelegate:self];
+    }
+}
 
 
 #pragma mark - Actions
@@ -40,16 +64,6 @@
 }
 
 
-#pragma mark - Getters/Setters
-- (void)setMidi:(PGMidi *)midi
-{
-    _midi = midi;
-    _midi.delegate = self;
-    for (PGMidiSource *source in _midi.sources) {
-        [source addDelegate:self];
-    }
-}
-
 #pragma mark - Helpers
 - (void)addString:(NSString*)string
 {
@@ -68,6 +82,8 @@
         Byte byte = packet->data[i];
         [string appendFormat:@"0x%02x  ", byte];
     }
+    [_sampler playMIDIPacket:packet];
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         [self addString:string];
     });
@@ -83,6 +99,9 @@
 {
     [source removeDelegate:self];
 }
+
+- (void)midi:(PGMidi *)midi destinationAdded:(PGMidiDestination *)destination {}
+- (void)midi:(PGMidi *)midi destinationRemoved:(PGMidiDestination *)destination {}
 
 
 #pragma mark - PGMidiSourceDelegate
