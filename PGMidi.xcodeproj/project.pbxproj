@@ -15,8 +15,6 @@
 		2899E5220DE3E06400AC0155 /* MidiMonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MidiMonitorViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* MidiMonitorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MidiMonitorViewController.mm */; };
-		A011F4C41AB8D16200EC164E /* VintageStrat.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = A011F4C31AB8D16200EC164E /* VintageStrat.aupreset */; };
-		A011F4C51AB8D16200EC164E /* VintageStrat.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = A011F4C31AB8D16200EC164E /* VintageStrat.aupreset */; };
 		A011F4C61AB8D17700EC164E /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = A0C6DD231AB8A69A009F1EA1 /* Sounds */; };
 		A0C6DC0E1AB72940009F1EA1 /* MidiMonitorOSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6DC0D1AB72940009F1EA1 /* MidiMonitorOSXAppDelegate.m */; };
 		A0C6DC101AB72940009F1EA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C6DC0F1AB72940009F1EA1 /* main.m */; };
@@ -82,7 +80,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MidiMonitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MidiMonitor-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A011F4C31AB8D16200EC164E /* VintageStrat.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = VintageStrat.aupreset; sourceTree = "<group>"; };
 		A0C6DC081AB72940009F1EA1 /* MidiMonitor-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MidiMonitor-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C6DC0B1AB72940009F1EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C6DC0C1AB72940009F1EA1 /* MidiMonitorOSXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiMonitorOSXAppDelegate.h; sourceTree = "<group>"; };
@@ -200,7 +197,6 @@
 				C139406114DF28FA0054551E /* README.md */,
 				C14323231A641EE600CEB4F5 /* PGMidi.podspec */,
 				C1763E401266EFB60032E953 /* Sources */,
-				A0C6DC361AB776F7009F1EA1 /* Submodules */,
 				A0C6DCB21AB890D6009F1EA1 /* Libraries */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				A0C6DC091AB72940009F1EA1 /* MidiMonitor-OSX */,
@@ -284,13 +280,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A0C6DC361AB776F7009F1EA1 /* Submodules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Submodules;
-			sourceTree = "<group>";
-		};
 		A0C6DCB21AB890D6009F1EA1 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,7 +302,6 @@
 				A0C6DCB51AB890D6009F1EA1 /* Classes */,
 				A0C6DCCE1AB890D6009F1EA1 /* Sounds */,
 				A0C6DCD51AB890D6009F1EA1 /* Trombone.aupreset */,
-				A011F4C31AB8D16200EC164E /* VintageStrat.aupreset */,
 				A0C6DCD61AB890D6009F1EA1 /* Vibraphone.aupreset */,
 			);
 			path = LoadPresetDemo;
@@ -503,7 +491,6 @@
 				A0C6DD241AB8A69A009F1EA1 /* Sounds in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* MidiMonitorViewController.xib in Resources */,
-				A011F4C41AB8D16200EC164E /* VintageStrat.aupreset in Resources */,
 				C14323221A64162000CEB4F5 /* Default-568h@2x.png in Resources */,
 				A0C6DD051AB890D6009F1EA1 /* Vibraphone.aupreset in Resources */,
 				C1763E811266FAEB0032E953 /* Icon-72.png in Resources */,
@@ -520,7 +507,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C6DC121AB72940009F1EA1 /* Images.xcassets in Resources */,
-				A011F4C51AB8D16200EC164E /* VintageStrat.aupreset in Resources */,
 				A011F4C61AB8D17700EC164E /* Sounds in Resources */,
 				A0C6DC151AB72941009F1EA1 /* MainMenu.xib in Resources */,
 				A0C6DD061AB890D6009F1EA1 /* Vibraphone.aupreset in Resources */,
