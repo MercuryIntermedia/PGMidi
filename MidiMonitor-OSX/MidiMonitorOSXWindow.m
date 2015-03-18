@@ -8,22 +8,8 @@
 
 #import <CoreMIDI/CoreMIDI.h>
 #import "MidiMonitorOSXWindow.h"
-#import "HgSampler.h"
 
 @implementation MidiMonitorOSXWindow
-
-
-#pragma mark - Lifecycle
-- (void)awakeFromNib
-{
-    [self sharedInit];
-}
-
-- (void)sharedInit
-{
-    self.sampler = [HgSampler sampler];
-    [_sampler loadPresetWithName:@"Trombone"];
-}
 
 #pragma mark - Getters/Setters
 - (void)setMidi:(PGMidi *)midi
@@ -82,7 +68,6 @@
         Byte byte = packet->data[i];
         [string appendFormat:@"0x%02x  ", byte];
     }
-    [_sampler playMIDIPacket:packet];
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self addString:string];

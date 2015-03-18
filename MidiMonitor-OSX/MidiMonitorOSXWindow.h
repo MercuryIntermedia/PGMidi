@@ -17,7 +17,6 @@
 @property (nonatomic, strong) IBOutlet NSTextView *textView;
 
 @property (nonatomic, strong) PGMidi *midi;
-@property (nonatomic, strong) HgSampler *sampler;
 
 - (IBAction)clearTextView:(id)sender;
 - (IBAction)listAllInterfaces:(id)sender;
