@@ -209,15 +209,6 @@ void PGMIDIVirtualDestinationReadProc(const MIDIPacketList *pktlist, void *readP
 
 @dynamic networkEnabled;
 
-+ (BOOL)midiAvailable
-{
-#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
-    return [[[UIDevice currentDevice] systemVersion] floatValue] >= 4.2;
-#else
-    return YES;
-#endif
-}
-
 - (id) init
 {
     self = [super init];

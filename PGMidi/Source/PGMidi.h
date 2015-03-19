@@ -118,8 +118,6 @@ extern NSString * const PGMidiConnectionKey;
     MIDIEndpointRef _virtualDestinationEndpoint;
 }
 
-+ (BOOL)midiAvailable;
-
 @property (nonatomic, weak)   id<PGMidiDelegate> delegate;
 @property (nonatomic, readonly) NSUInteger numberOfConnections;
 @property (nonatomic, readonly) NSMutableArray *sources;
