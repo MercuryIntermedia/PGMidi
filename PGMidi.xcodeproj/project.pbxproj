@@ -7,33 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		2899E5220DE3E06400AC0155 /* PGMidiViewController_iOS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* PGMidiViewController_iOS.xib */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		A011F54F1ABA2B2A00EC164E /* PGMidiAppDelegate_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = A011F5471ABA2B1F00EC164E /* PGMidiAppDelegate_iOS.m */; };
-		A011F5501ABA2B2C00EC164E /* PGMidiViewController_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A011F5491ABA2B1F00EC164E /* PGMidiViewController_iOS.mm */; };
-		A011F5511ABA2B4F00EC164E /* PGMidiAppDelegate_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = A011F54C1ABA2B1F00EC164E /* PGMidiAppDelegate_OSX.m */; };
-		A011F5521ABA2B5100EC164E /* PGMidiWindow_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = A011F54E1ABA2B1F00EC164E /* PGMidiWindow_OSX.m */; };
-		A011F5541ABA2BC500EC164E /* PGMidi-Info-OSX.plist in Resources */ = {isa = PBXBuildFile; fileRef = A011F5531ABA2BC500EC164E /* PGMidi-Info-OSX.plist */; };
-		A011F5591ABA2C5C00EC164E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A011F5561ABA2BCE00EC164E /* MainMenu.xib */; };
-		A011F55A1ABA2C7F00EC164E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		A08C78AE1ABB16A3000A8FD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A08C78AC1ABB16A3000A8FD6 /* main.m */; };
+		A08C78AF1ABB16A3000A8FD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A08C78AC1ABB16A3000A8FD6 /* main.m */; };
+		A08C78BC1ABB16CA000A8FD6 /* PGMidiAppDelegate_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = A08C78B41ABB16BB000A8FD6 /* PGMidiAppDelegate_iOS.m */; };
+		A08C78BD1ABB16CB000A8FD6 /* PGMidiViewController_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C78B61ABB16BB000A8FD6 /* PGMidiViewController_iOS.mm */; };
+		A08C78BE1ABB16CF000A8FD6 /* PGMidiAppDelegate_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = A08C78B91ABB16BB000A8FD6 /* PGMidiAppDelegate_OSX.m */; };
+		A08C78BF1ABB16D1000A8FD6 /* PGMidiWindow_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = A08C78BB1ABB16BB000A8FD6 /* PGMidiWindow_OSX.m */; };
+		A08C78D61ABB16DE000A8FD6 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = A08C78C11ABB16DE000A8FD6 /* Entitlements.plist */; };
+		A08C78D71ABB16DE000A8FD6 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = A08C78C11ABB16DE000A8FD6 /* Entitlements.plist */; };
+		A08C78D81ABB16DE000A8FD6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C78C31ABB16DE000A8FD6 /* Default-568h@2x.png */; };
+		A08C78DA1ABB16DE000A8FD6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C78C41ABB16DE000A8FD6 /* Default.png */; };
+		A08C78DC1ABB16DE000A8FD6 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C78C51ABB16DE000A8FD6 /* Icon-72.png */; };
+		A08C78DE1ABB16DE000A8FD6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A08C78C61ABB16DE000A8FD6 /* Icon.png */; };
+		A08C78E61ABB16DE000A8FD6 /* MainWindow-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08C78CC1ABB16DE000A8FD6 /* MainWindow-iPhone.xib */; };
+		A08C78E81ABB16DE000A8FD6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08C78CD1ABB16DE000A8FD6 /* MainWindow.xib */; };
+		A08C78EA1ABB16DE000A8FD6 /* PGMidiViewController_iOS.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08C78CE1ABB16DE000A8FD6 /* PGMidiViewController_iOS.xib */; };
+		A08C78EC1ABB16DE000A8FD6 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C78D11ABB16DE000A8FD6 /* PGMidi.mm */; };
+		A08C78ED1ABB16DE000A8FD6 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C78D11ABB16DE000A8FD6 /* PGMidi.mm */; };
+		A08C78EE1ABB16DE000A8FD6 /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C78D31ABB16DE000A8FD6 /* PGMidiAllSources.mm */; };
+		A08C78EF1ABB16DE000A8FD6 /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C78D31ABB16DE000A8FD6 /* PGMidiAllSources.mm */; };
+		A08C78F01ABB16DE000A8FD6 /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C78D51ABB16DE000A8FD6 /* PGMidiFind.mm */; };
+		A08C78F11ABB16DE000A8FD6 /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = A08C78D51ABB16DE000A8FD6 /* PGMidiFind.mm */; };
+		A08C78F31ABB170D000A8FD6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08C78F21ABB170D000A8FD6 /* MainMenu.xib */; };
 		A0C6DC2F1AB7345F009F1EA1 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C6DC2E1AB7345F009F1EA1 /* CoreMIDI.framework */; };
-		A0C6DC301AB73848009F1EA1 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1763E711266F7F60032E953 /* PGMidi.mm */; };
-		A0C6DC311AB73848009F1EA1 /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1314ABF12FC259B0073005E /* PGMidiAllSources.mm */; };
-		A0C6DC321AB73848009F1EA1 /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1314AC112FC259B0073005E /* PGMidiFind.mm */; };
-		C1314AC212FC259B0073005E /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1314ABF12FC259B0073005E /* PGMidiAllSources.mm */; };
-		C1314AC312FC259B0073005E /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1314AC112FC259B0073005E /* PGMidiFind.mm */; };
-		C139406214DF28FA0054551E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C139406114DF28FA0054551E /* README.md */; };
-		C14323221A64162000CEB4F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14323211A64162000CEB4F5 /* Default-568h@2x.png */; };
 		C1763E421266F0190032E953 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1763E411266F0190032E953 /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C1763E721266F7F60032E953 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1763E711266F7F60032E953 /* PGMidi.mm */; };
-		C1763E811266FAEB0032E953 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C1763E801266FAEB0032E953 /* Icon-72.png */; };
-		C1763EBB1266FC920032E953 /* MainWindow-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1763EBA1266FC920032E953 /* MainWindow-iPhone.xib */; };
-		C1763EDC1266FFBE0032E953 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C1763EDB1266FFBE0032E953 /* Icon.png */; };
-		C1763FE312672EEC0032E953 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C1763FE212672EEC0032E953 /* Default.png */; };
-		C1FFC85B12798CAF003DD5CD /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FFC85A12798CAF003DD5CD /* Entitlements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,21 +40,33 @@
 		1D6058910D05DD3D006BFB54 /* MidiMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* PGMidiViewController_iOS.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PGMidiViewController_iOS.xib; sourceTree = "<group>"; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* PGMidi-Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PGMidi-Info-iOS.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A011F5461ABA2B1F00EC164E /* PGMidiAppDelegate_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiAppDelegate_iOS.h; sourceTree = "<group>"; };
-		A011F5471ABA2B1F00EC164E /* PGMidiAppDelegate_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGMidiAppDelegate_iOS.m; sourceTree = "<group>"; };
-		A011F5481ABA2B1F00EC164E /* PGMidiViewController_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiViewController_iOS.h; sourceTree = "<group>"; };
-		A011F5491ABA2B1F00EC164E /* PGMidiViewController_iOS.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiViewController_iOS.mm; sourceTree = "<group>"; };
-		A011F54B1ABA2B1F00EC164E /* PGMidiAppDelegate_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiAppDelegate_OSX.h; sourceTree = "<group>"; };
-		A011F54C1ABA2B1F00EC164E /* PGMidiAppDelegate_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGMidiAppDelegate_OSX.m; sourceTree = "<group>"; };
-		A011F54D1ABA2B1F00EC164E /* PGMidiWindow_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiWindow_OSX.h; sourceTree = "<group>"; };
-		A011F54E1ABA2B1F00EC164E /* PGMidiWindow_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGMidiWindow_OSX.m; sourceTree = "<group>"; };
-		A011F5531ABA2BC500EC164E /* PGMidi-Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PGMidi-Info-OSX.plist"; sourceTree = "<group>"; };
-		A011F5571ABA2BCE00EC164E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
+		A08C78AC1ABB16A3000A8FD6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PGMidi/main.m; sourceTree = "<group>"; };
+		A08C78AD1ABB16A3000A8FD6 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = PGMidi/Prefix.pch; sourceTree = "<group>"; };
+		A08C78B31ABB16BB000A8FD6 /* PGMidiAppDelegate_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiAppDelegate_iOS.h; sourceTree = "<group>"; };
+		A08C78B41ABB16BB000A8FD6 /* PGMidiAppDelegate_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGMidiAppDelegate_iOS.m; sourceTree = "<group>"; };
+		A08C78B51ABB16BB000A8FD6 /* PGMidiViewController_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiViewController_iOS.h; sourceTree = "<group>"; };
+		A08C78B61ABB16BB000A8FD6 /* PGMidiViewController_iOS.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiViewController_iOS.mm; sourceTree = "<group>"; };
+		A08C78B81ABB16BB000A8FD6 /* PGMidiAppDelegate_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiAppDelegate_OSX.h; sourceTree = "<group>"; };
+		A08C78B91ABB16BB000A8FD6 /* PGMidiAppDelegate_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGMidiAppDelegate_OSX.m; sourceTree = "<group>"; };
+		A08C78BA1ABB16BB000A8FD6 /* PGMidiWindow_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiWindow_OSX.h; sourceTree = "<group>"; };
+		A08C78BB1ABB16BB000A8FD6 /* PGMidiWindow_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGMidiWindow_OSX.m; sourceTree = "<group>"; };
+		A08C78C11ABB16DE000A8FD6 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		A08C78C31ABB16DE000A8FD6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A08C78C41ABB16DE000A8FD6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A08C78C51ABB16DE000A8FD6 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		A08C78C61ABB16DE000A8FD6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A08C78C71ABB16DE000A8FD6 /* PGMidi-Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PGMidi-Info-iOS.plist"; sourceTree = "<group>"; };
+		A08C78C81ABB16DE000A8FD6 /* PGMidi-Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PGMidi-Info-OSX.plist"; sourceTree = "<group>"; };
+		A08C78CC1ABB16DE000A8FD6 /* MainWindow-iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPhone.xib"; sourceTree = "<group>"; };
+		A08C78CD1ABB16DE000A8FD6 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		A08C78CE1ABB16DE000A8FD6 /* PGMidiViewController_iOS.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PGMidiViewController_iOS.xib; sourceTree = "<group>"; };
+		A08C78D01ABB16DE000A8FD6 /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		A08C78D11ABB16DE000A8FD6 /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		A08C78D21ABB16DE000A8FD6 /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		A08C78D31ABB16DE000A8FD6 /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		A08C78D41ABB16DE000A8FD6 /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		A08C78D51ABB16DE000A8FD6 /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		A08C78F21ABB170D000A8FD6 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		A0C6DC081AB72940009F1EA1 /* PGMidi-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PGMidi-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C6DC2E1AB7345F009F1EA1 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreMIDI.framework; sourceTree = DEVELOPER_DIR; };
 		A0C6DCA61AB77727009F1EA1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -67,21 +78,9 @@
 		A0C6DD101AB89166009F1EA1 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
 		A0C6DD121AB8A1C3009F1EA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A0C6DD141AB8A1CD009F1EA1 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		C1314ABE12FC259B0073005E /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
-		C1314ABF12FC259B0073005E /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
-		C1314AC012FC259B0073005E /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
-		C1314AC112FC259B0073005E /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
 		C139406114DF28FA0054551E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		C14323211A64162000CEB4F5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C14323231A641EE600CEB4F5 /* PGMidi.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PGMidi.podspec; sourceTree = "<group>"; };
 		C1763E411266F0190032E953 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		C1763E701266F7F60032E953 /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
-		C1763E711266F7F60032E953 /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
-		C1763E801266FAEB0032E953 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		C1763EBA1266FC920032E953 /* MainWindow-iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MainWindow-iPhone.xib"; sourceTree = "<group>"; };
-		C1763EDB1266FFBE0032E953 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		C1763FE212672EEC0032E953 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C1FFC85A12798CAF003DD5CD /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,15 +105,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				A011F5451ABA2B1F00EC164E /* iOS */,
-				A011F54A1ABA2B1F00EC164E /* OSX */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,24 +119,14 @@
 			children = (
 				C139406114DF28FA0054551E /* README.md */,
 				C14323231A641EE600CEB4F5 /* PGMidi.podspec */,
-				C1763E401266EFB60032E953 /* Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
+				A08C78B11ABB16BB000A8FD6 /* UI */,
+				A08C78C01ABB16DE000A8FD6 /* Resources */,
+				A08C78CF1ABB16DE000A8FD6 /* Source */,
+				A08C78B01ABB16A8000A8FD6 /* Supporting Files */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = CustomTemplate;
-			sourceTree = "<group>";
-		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C1763E761266FAC90032E953 /* Icons */,
-				C1763E751266FAC60032E953 /* XIBs */,
-				C1FFC85A12798CAF003DD5CD /* Entitlements.plist */,
-				8D1107310486CEB800E47090 /* PGMidi-Info-iOS.plist */,
-				A011F5531ABA2BC500EC164E /* PGMidi-Info-OSX.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -170,80 +150,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A011F5451ABA2B1F00EC164E /* iOS */ = {
+		A08C78B01ABB16A8000A8FD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A011F5461ABA2B1F00EC164E /* PGMidiAppDelegate_iOS.h */,
-				A011F5471ABA2B1F00EC164E /* PGMidiAppDelegate_iOS.m */,
-				A011F5481ABA2B1F00EC164E /* PGMidiViewController_iOS.h */,
-				A011F5491ABA2B1F00EC164E /* PGMidiViewController_iOS.mm */,
+				A08C78AC1ABB16A3000A8FD6 /* main.m */,
+				A08C78AD1ABB16A3000A8FD6 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A08C78B11ABB16BB000A8FD6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A08C78B21ABB16BB000A8FD6 /* iOS */,
+				A08C78B71ABB16BB000A8FD6 /* OSX */,
+			);
+			name = UI;
+			path = PGMidi/UI;
+			sourceTree = "<group>";
+		};
+		A08C78B21ABB16BB000A8FD6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A08C78B31ABB16BB000A8FD6 /* PGMidiAppDelegate_iOS.h */,
+				A08C78B41ABB16BB000A8FD6 /* PGMidiAppDelegate_iOS.m */,
+				A08C78B51ABB16BB000A8FD6 /* PGMidiViewController_iOS.h */,
+				A08C78B61ABB16BB000A8FD6 /* PGMidiViewController_iOS.mm */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		A011F54A1ABA2B1F00EC164E /* OSX */ = {
+		A08C78B71ABB16BB000A8FD6 /* OSX */ = {
 			isa = PBXGroup;
 			children = (
-				A011F54B1ABA2B1F00EC164E /* PGMidiAppDelegate_OSX.h */,
-				A011F54C1ABA2B1F00EC164E /* PGMidiAppDelegate_OSX.m */,
-				A011F54D1ABA2B1F00EC164E /* PGMidiWindow_OSX.h */,
-				A011F54E1ABA2B1F00EC164E /* PGMidiWindow_OSX.m */,
+				A08C78B81ABB16BB000A8FD6 /* PGMidiAppDelegate_OSX.h */,
+				A08C78B91ABB16BB000A8FD6 /* PGMidiAppDelegate_OSX.m */,
+				A08C78BA1ABB16BB000A8FD6 /* PGMidiWindow_OSX.h */,
+				A08C78BB1ABB16BB000A8FD6 /* PGMidiWindow_OSX.m */,
 			);
 			path = OSX;
 			sourceTree = "<group>";
 		};
-		A011F5551ABA2BCE00EC164E /* Base.lproj */ = {
+		A08C78C01ABB16DE000A8FD6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A011F5561ABA2BCE00EC164E /* MainMenu.xib */,
+				A08C78C11ABB16DE000A8FD6 /* Entitlements.plist */,
+				A08C78C71ABB16DE000A8FD6 /* PGMidi-Info-iOS.plist */,
+				A08C78C81ABB16DE000A8FD6 /* PGMidi-Info-OSX.plist */,
+				A08C78C21ABB16DE000A8FD6 /* Icons */,
+				A08C78C91ABB16DE000A8FD6 /* XIBs */,
 			);
-			path = Base.lproj;
+			name = Resources;
+			path = PGMidi/Resources;
 			sourceTree = "<group>";
 		};
-		C1763E401266EFB60032E953 /* Sources */ = {
+		A08C78C21ABB16DE000A8FD6 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				080E96DDFE201D6D7F000001 /* UI */,
-				C1763E6A1266F69F0032E953 /* PGMidi */,
-				32CA4F630368D1EE00C91783 /* Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				A08C78C31ABB16DE000A8FD6 /* Default-568h@2x.png */,
+				A08C78C41ABB16DE000A8FD6 /* Default.png */,
+				A08C78C51ABB16DE000A8FD6 /* Icon-72.png */,
+				A08C78C61ABB16DE000A8FD6 /* Icon.png */,
 			);
-			path = Sources;
+			path = Icons;
 			sourceTree = "<group>";
 		};
-		C1763E6A1266F69F0032E953 /* PGMidi */ = {
+		A08C78C91ABB16DE000A8FD6 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				C1763E701266F7F60032E953 /* PGMidi.h */,
-				C1763E711266F7F60032E953 /* PGMidi.mm */,
-				C1314ABE12FC259B0073005E /* PGMidiAllSources.h */,
-				C1314ABF12FC259B0073005E /* PGMidiAllSources.mm */,
-				C1314AC012FC259B0073005E /* PGMidiFind.h */,
-				C1314AC112FC259B0073005E /* PGMidiFind.mm */,
-			);
-			path = PGMidi;
-			sourceTree = "<group>";
-		};
-		C1763E751266FAC60032E953 /* XIBs */ = {
-			isa = PBXGroup;
-			children = (
-				A011F5551ABA2BCE00EC164E /* Base.lproj */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				C1763EBA1266FC920032E953 /* MainWindow-iPhone.xib */,
-				2899E5210DE3E06400AC0155 /* PGMidiViewController_iOS.xib */,
+				A08C78F21ABB170D000A8FD6 /* MainMenu.xib */,
+				A08C78CC1ABB16DE000A8FD6 /* MainWindow-iPhone.xib */,
+				A08C78CD1ABB16DE000A8FD6 /* MainWindow.xib */,
+				A08C78CE1ABB16DE000A8FD6 /* PGMidiViewController_iOS.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
 		};
-		C1763E761266FAC90032E953 /* Icons */ = {
+		A08C78CF1ABB16DE000A8FD6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C1763FE212672EEC0032E953 /* Default.png */,
-				C14323211A64162000CEB4F5 /* Default-568h@2x.png */,
-				C1763EDB1266FFBE0032E953 /* Icon.png */,
-				C1763E801266FAEB0032E953 /* Icon-72.png */,
+				A08C78D01ABB16DE000A8FD6 /* PGMidi.h */,
+				A08C78D11ABB16DE000A8FD6 /* PGMidi.mm */,
+				A08C78D21ABB16DE000A8FD6 /* PGMidiAllSources.h */,
+				A08C78D31ABB16DE000A8FD6 /* PGMidiAllSources.mm */,
+				A08C78D41ABB16DE000A8FD6 /* PGMidiFind.h */,
+				A08C78D51ABB16DE000A8FD6 /* PGMidiFind.mm */,
 			);
-			path = Icons;
+			name = Source;
+			path = PGMidi/Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,15 +321,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* PGMidiViewController_iOS.xib in Resources */,
-				C14323221A64162000CEB4F5 /* Default-568h@2x.png in Resources */,
-				C1763E811266FAEB0032E953 /* Icon-72.png in Resources */,
-				C1763EBB1266FC920032E953 /* MainWindow-iPhone.xib in Resources */,
-				C1763EDC1266FFBE0032E953 /* Icon.png in Resources */,
-				C1763FE312672EEC0032E953 /* Default.png in Resources */,
-				C1FFC85B12798CAF003DD5CD /* Entitlements.plist in Resources */,
-				C139406214DF28FA0054551E /* README.md in Resources */,
+				A08C78E81ABB16DE000A8FD6 /* MainWindow.xib in Resources */,
+				A08C78DE1ABB16DE000A8FD6 /* Icon.png in Resources */,
+				A08C78D61ABB16DE000A8FD6 /* Entitlements.plist in Resources */,
+				A08C78EA1ABB16DE000A8FD6 /* PGMidiViewController_iOS.xib in Resources */,
+				A08C78DC1ABB16DE000A8FD6 /* Icon-72.png in Resources */,
+				A08C78D81ABB16DE000A8FD6 /* Default-568h@2x.png in Resources */,
+				A08C78DA1ABB16DE000A8FD6 /* Default.png in Resources */,
+				A08C78E61ABB16DE000A8FD6 /* MainWindow-iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,8 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A011F5541ABA2BC500EC164E /* PGMidi-Info-OSX.plist in Resources */,
-				A011F5591ABA2C5C00EC164E /* MainMenu.xib in Resources */,
+				A08C78D71ABB16DE000A8FD6 /* Entitlements.plist in Resources */,
+				A08C78F31ABB170D000A8FD6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,12 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				C1763E721266F7F60032E953 /* PGMidi.mm in Sources */,
-				C1314AC212FC259B0073005E /* PGMidiAllSources.mm in Sources */,
-				A011F54F1ABA2B2A00EC164E /* PGMidiAppDelegate_iOS.m in Sources */,
-				A011F5501ABA2B2C00EC164E /* PGMidiViewController_iOS.mm in Sources */,
-				C1314AC312FC259B0073005E /* PGMidiFind.mm in Sources */,
+				A08C78AE1ABB16A3000A8FD6 /* main.m in Sources */,
+				A08C78EE1ABB16DE000A8FD6 /* PGMidiAllSources.mm in Sources */,
+				A08C78F01ABB16DE000A8FD6 /* PGMidiFind.mm in Sources */,
+				A08C78BC1ABB16CA000A8FD6 /* PGMidiAppDelegate_iOS.m in Sources */,
+				A08C78BD1ABB16CB000A8FD6 /* PGMidiViewController_iOS.mm in Sources */,
+				A08C78EC1ABB16DE000A8FD6 /* PGMidi.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,27 +361,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A011F55A1ABA2C7F00EC164E /* main.m in Sources */,
-				A0C6DC301AB73848009F1EA1 /* PGMidi.mm in Sources */,
-				A0C6DC311AB73848009F1EA1 /* PGMidiAllSources.mm in Sources */,
-				A0C6DC321AB73848009F1EA1 /* PGMidiFind.mm in Sources */,
-				A011F5511ABA2B4F00EC164E /* PGMidiAppDelegate_OSX.m in Sources */,
-				A011F5521ABA2B5100EC164E /* PGMidiWindow_OSX.m in Sources */,
+				A08C78AF1ABB16A3000A8FD6 /* main.m in Sources */,
+				A08C78EF1ABB16DE000A8FD6 /* PGMidiAllSources.mm in Sources */,
+				A08C78F11ABB16DE000A8FD6 /* PGMidiFind.mm in Sources */,
+				A08C78BE1ABB16CF000A8FD6 /* PGMidiAppDelegate_OSX.m in Sources */,
+				A08C78BF1ABB16D1000A8FD6 /* PGMidiWindow_OSX.m in Sources */,
+				A08C78ED1ABB16DE000A8FD6 /* PGMidi.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A011F5561ABA2BCE00EC164E /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A011F5571ABA2BCE00EC164E /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -396,14 +378,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = PGMidi/Resources/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Sources/Prefix.pch;
-				INFOPLIST_FILE = "Resources/PGMidi-Info-iOS.plist";
+				GCC_PREFIX_HEADER = PGMidi/Prefix.pch;
+				INFOPLIST_FILE = "PGMidi/Resources/PGMidi-Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = MidiMonitor;
 				PROVISIONING_PROFILE = "";
@@ -416,12 +399,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = PGMidi/Resources/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Sources/Prefix.pch;
-				INFOPLIST_FILE = "Resources/PGMidi-Info-iOS.plist";
+				GCC_PREFIX_HEADER = PGMidi/Prefix.pch;
+				INFOPLIST_FILE = "PGMidi/Resources/PGMidi-Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = MidiMonitor;
 				PROVISIONING_PROFILE = "";
@@ -447,6 +431,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = PGMidi/Resources/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -463,7 +448,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "Resources/PGMidi-Info-OSX.plist";
+				INFOPLIST_FILE = "PGMidi/Resources/PGMidi-Info-OSX.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -489,6 +474,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = PGMidi/Resources/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -500,7 +486,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "Resources/PGMidi-Info-OSX.plist";
+				INFOPLIST_FILE = "PGMidi/Resources/PGMidi-Info-OSX.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
